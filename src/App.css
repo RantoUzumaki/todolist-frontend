@@ -1,0 +1,23 @@
+:root {
+  --yellow: #F9ED69;
+  --orange: #F08A5D;
+  --red: #B83B5E;
+  --violet: #6A2C70;
+  --black: #1a1a1a
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body > div {
+    background: var(--black);
+    width: 100vw;
+    height: 100vh;
+}

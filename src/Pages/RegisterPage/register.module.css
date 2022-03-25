@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Moon-Light;
+    src: url(../../Assets/fonts/Moon\ Light.otf);
+}
+
+@font-face {
+    font-family: Moon-Bold;
+    src: url(../../Assets/fonts/Moon\ Bold.otf);
+}
+
+.MainContainer {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
+.centeraizedContainer {
+    margin: auto;
+    width: 650px;
+    height: max-content;
+}
+
+.centeredDiv {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    /* box-shadow: -10px 10px 20px 0px rgba(65, 179, 161, 0.7); */
+    background-color: var(--red);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.headText {
+	width: 100%;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: Moon-Bold;
+    text-align: center;
+    color: white;
+    text-shadow: -5px 5px 10px black;
+}
+
+.firstnameInput,
+.lastnameInput,
+.usernameInput,
+.useremailInput,
+.passwordInput,
+.CnfmpasswordInput {
+    width: 48%;
+    margin: auto auto 20px;
+    display: flex;
+    height: 40px;
+    text-align: center;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.3s outline ease-in-out;
+}
+
+.firstnameInput:focus,
+.lastnameInput:focus,
+.usernameInput:focus,
+.useremailInput:focus,
+.passwordInput:focus,
+.CnfmpasswordInput:focus {
+    outline: 3px solid var(--black);
+}
+
+.CnfmpasswordDiv {
+    display: flex;
+    width: 48%;
+    margin: 0 auto auto;
+    position: relative;
+}
+
+.CnfmpasswordInput {
+    width: 100%;
+    margin: auto 0 10px auto;
+    display: flex;
+    height: 40px;
+    text-align: center;
+    border: 0;
+    border-radius: 10px;
+}
+
+.showPassword {
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    right: 5%;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.submitButton {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    background: var(--yellow);
+    border: 0;
+    color: var(--black);
+    font-size: 22px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 0.3s all ease-in-out;
+}
+
+.submitButton:hover {
+    box-shadow: -5px 5px 10px 0 var(--black);
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
+.IsadminLabel {
+    width: 100%;
+    display: flex;
+}

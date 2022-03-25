@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Moon-Light;
+    src: url(../../Assets/fonts/Moon\ Light.otf);
+}
+
+.mainContainer {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.usernameDiv {
+    width: 80%;
+    display: flex;
+    margin: auto auto 0;
+    font-size: 20px;
+    justify-content: space-between;
+    color: white;
+}
+
+.usernameDiv > p > span {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Moon-Bold;
+    color: var(--orange);
+}
+
+.CreateTaskDiv {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: max-content;
+    height: max-content;
+    z-index: 999;
+}
+
+.CreateTask {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border: 0;
+    border-radius: 50%;
+    padding: 10px;
+    background: var(--red);
+    color: var(--black);
+    font-size: 20px;
+    transition: 0.4s all ease-in-out;
+}
+
+.CreateTask i::after {
+    content: "";
+    opacity: 0;
+    transition: 0.8s opacity ease-in-out, 0.8s content ease-in-out;
+}
+
+.CreateTask:hover {
+    background: var(--black);
+    color: var(--red);
+    border: 1px solid var(--red);
+    box-shadow: -5px 5px 10px 0px var(--red);
+    display: flex;
+    width: max-content;
+    border-radius: 10px;
+    width: 180px;
+}
+
+.CreateTask:hover i::after {
+    content: "Create Task";
+    padding-left: 15px;
+    opacity: 1;
+    transition: 0.4s all ease-in-out;
+}
+
+.centeredConatiner {
+    width: 80%;
+    display: flex;
+    margin: 0 auto auto;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.centeredConatiner thead th {
+    position: sticky;
+    top: 0;
+}
+
+th {
+    background-color: var(--yellow);
+}
+
+td {
+    background-color: var(--violet);
+}
+
+tbody > tr:nth-child(even) > td {
+    background-color: var(--orange) !important;
+}
+
+.DashboardTable {
+    width: 100%;
+    height: max-content;
+    text-align: center;
+}
+
+.TableHeadMain {
+    height: 50px;
+}
+
+.TableHeadRow,
+.TableBodyRow {
+    height: 40px;
+}
+
+.TableHeadRow > th:nth-child(2),
+.TableHeadRow > th:nth-child(3),
+.TableHeadRow > th:nth-child(4) {
+    width: 15%;
+}
+
+.EditButton {
+    border: 0;
+    height: 25px;
+    width: 25px;
+    color: white;
+    background: #41b3a3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.EditButton:hover {
+    background: black;
+    box-shadow: -5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s all ease-in-out;
+}
+
+.DeleteButton {
+    width: 25px;
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+    background: #d32f2f;
+    color: white;
+}
+
+.DeleteButton:hover {
+    background: black;
+    color: #d32f2f;
+    box-shadow: -5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s all ease-in-out;
+}
+
+.NotLogin {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NotLogin p {
+    margin: 0;
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+    text-shadow: -5px 5px #333;
+}

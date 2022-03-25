@@ -1,0 +1,117 @@
+.mainContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centeredContainer {
+    position: relative;
+    padding: 30px;
+    width: 50%;
+    background-color: var(--black);
+    border-radius: 10px;
+}
+
+.taskTitle {
+    width: max-content;
+    font-size: 26px;
+    font-family: Moon-Bold;
+    font-weight: bolder;
+    color: var(--yellow);
+}
+
+.closeBtn {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: max-content;
+    padding: 8px;
+    height: max-content;
+    padding: 8px;
+    font-size: 22px;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    color: var(--yellow);
+    transition: 0.3s ease-in-out;
+}
+
+.closeBtn:hover {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.input {
+    width: 70%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 0;
+    background: var(--yellow);
+    border: 2px solid var(--yellow);
+    transition: 0.3s ease-in-out;
+}
+
+.input:focus,
+.input:hover {
+    outline: 0;
+    border: 2px solid var(--yellow);
+    background: var(--black);
+    color: var(--yellow);
+}
+
+.input::placeholder {
+    opacity: 0.8;
+    color: var(--black);
+}
+
+.activeDiv {
+    display: flex;
+    height: max-content;
+    width: max-content;
+    color: var(--yellow);
+    align-items: center;
+    gap: 10px;
+}
+
+.sepDiv {
+    width: 100%;
+    height: 5px;
+    background: var(--violet);
+    margin: auto auto 20px;
+}
+
+.Button {
+    width: 20%;
+    height: 40px;
+    margin-top: 20px;
+    background: var(--orange);
+    border: 0;
+    border-radius: 10px;
+    color: var(--black);
+    font-family: Moon-Bold;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid var(--orange);
+    transition: 0.3s all ease-in-out;
+}
+
+.Button:hover {
+    box-shadow: -6px 6px 5px 0px var(--orange);
+    background-color: var(--black);
+    color: var(--orange);
+}
+
+.activeCheck {
+    cursor: pointer;
+}
